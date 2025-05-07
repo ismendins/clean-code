@@ -3,7 +3,6 @@
  * Problema: As variáveis abaixo têm nomes ruins que não comunicam sua intenção.
  */
 
-
 function calcularCustoTotal(carrinhoDeCompras, descontoPadrao, pesos) {
   let valorAcumulado = 0;
   for (let i = 0; i < carrinhoDeCompras.length; i++) {
@@ -20,9 +19,9 @@ function calcularCustoTotal(carrinhoDeCompras, descontoPadrao, pesos) {
 const carrinhoDeCompras =  [
   { preco: 10, quantidade: 2, tipo: "alimento" },
   { preco: 10, quantidade: 2, tipo: "alimento" },
-]
+];
 const descontoPadrao = 10;
-const pesos = { alimento: 0.1, geral: 0.05 }
+const pesos = { alimento: 0.1, geral: 0.05 };
 
 const valorFinal =  calcularCustoTotal(carrinhoDeCompras, descontoPadrao ,pesos);
 console.log(valorFinal);

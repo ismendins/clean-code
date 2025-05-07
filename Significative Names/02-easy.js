@@ -26,6 +26,6 @@ function calculoDoDescontoPorDepartamento(produto) {
 
 const produto = {preco: 10, tipo: 1};
 
-const calculoDesconto = calculoDoDescontoPorDepartamento(produto)
+const calculoDesconto = calculoDoDescontoPorDepartamento(produto);
 
 console.log(calculoDesconto);

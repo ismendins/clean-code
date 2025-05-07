@@ -2,7 +2,7 @@
  * Exercício 3: Métodos com nomes não descritivos
  * Problema: Os métodos e propriedades abaixo têm nomes que não descrevem bem o que fazem.
  */
-class gerenciar_usuario {
+class GerenciarUsuario {
   constructor(bDados) {
     this.bDados = bDados;
   }
@@ -23,7 +23,7 @@ class gerenciar_usuario {
     }
   }
 
-  get(id) {
+  getByIdandDeleteSensibleData(id) {
     // Busca usuários por ID, exclui dados sensíveis
     const u = this.bDados.b_Dados(id);
     if (u) {
@@ -33,7 +33,7 @@ class gerenciar_usuario {
     return null;
   }
 
-  exec(id) {
+  removeById(id) {
     // Remove usuário da base de dados
     return this.bDados.ru(id);
   }
